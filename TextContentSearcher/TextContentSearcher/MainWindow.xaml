@@ -1,0 +1,19 @@
+﻿<Window x:Class="TextContentSearcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextContentSearcher"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="666">
+    <Grid>
+        <Button Content="搜索" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="58" Height="25" Click="Button_Click_1"/>
+        <Label Name="SearchPath"  Content="" Background="AliceBlue" Margin="80,10,100,0" VerticalAlignment="Top"/>
+        <Button  Content="选择目录" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="75" Height="25" Click="Button_Click"/>
+        <Label Content="目录：" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="ResultContent" Background="AliceBlue" Margin="10,102,10,10" TextWrapping="Wrap" Text="" IsReadOnly="True"/>
+        <Label Content="关键字：" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="SearchKey" Background="AliceBlue" VerticalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="80,44,0,0" VerticalAlignment="Top" Width="200" Text="" TextWrapping="Wrap"/>
+
+    </Grid>
+</Window>
